@@ -6,16 +6,26 @@ import Documentation from './component/documentation/Documentation';
 import WorkSpace from './component/workSpace/WorkSpace';
 import Customer from './component/customer /Customer ';
 import Footer from './component/footer/Footer';
+import Project from './component/project/Project';
+import Testimonials from './component/testimonials/Testimonials';
+import Slider from './component/slider/Slider';
+import Frequently from './component/ frequently / Frequently';
+import FirstSection from './component/firstSection/FirstSection';
 
 function App() {
   return (
     <div>
       <Header />
+      <FirstSection />
       <OurServices />
       <Documentation />
       <Customer />
       <WorkSpace />
-      <Footer/>
+      <Slider />
+      <Frequently />
+      <Testimonials />
+      <Project />
+      <Footer />
     </div>
   );
 }

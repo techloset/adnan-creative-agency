@@ -20,7 +20,7 @@ import amazon from '../../assets/svg-icon/amazon.svg'
 
 function WorkSpace() {
     return (
-        <div className='mt-[12.5rem]'>
+        <div className='py-[12.5rem] '>
             <div className='max-w-[70rem] mx-auto '>
                 <h1 className='text-[#FF3B2F] text-xl mb-5 font-semibold text-center'>Working space</h1>
                 <p className='mb-[3.7rem] text-center font-semibold mx-auto text-[2.6rem]'>Let’s meet our interior room decoration</p>

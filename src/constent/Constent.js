@@ -11,6 +11,14 @@ import dekstop1 from '../assets/svg-icon/dekstop-2.svg'
 import mobile1 from '../assets/svg-icon/mobile-2.svg'
 import building1 from '../assets/svg-icon/building-2.svg'
 import digital1 from '../assets/svg-icon/digital-2.svg'
+import ronald from '../assets/svg-icon/ronald.svg'
+import guy from '../assets/svg-icon/guy.svg'
+import kristin from '../assets/svg-icon/kristin.svg'
+import robert from '../assets/svg-icon/robert.svg'
+import savannah from '../assets/svg-icon/savannah.svg'
+import courtney from '../assets/svg-icon/courtney.svg'
+import review from '../assets/svg-icon/review.svg'
+
 
 
 export const data = [
@@ -97,5 +105,76 @@ export const customer = [
         title: '200+',
         desc: 'Support from world-renowned companies',
         mt: -56
+    },
+]
+
+
+export const testimonalsData = [
+    {
+        img: ronald,
+        name: 'Ronald Richards',
+        company: 'Google inc.',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        review: review,
+    },
+    {
+        img: guy,
+        name: 'Guy Hawkins',
+        company: 'Paypal inc.',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        review: review,
+    },
+    {
+        img: kristin,
+        name: 'Kristin Watson',
+        company: 'Microsoft inc.',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        review: review,
+    },
+    {
+        img: robert,
+        name: 'Robert Fox',
+        company: 'Facebook inc.',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        review: review,
+    },
+    {
+        img: savannah,
+        name: 'Savannah Nguyen',
+        company: 'Twitter inc.',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        review: review,
+    },
+    {
+        img: courtney,
+        name: 'Courtney Henry',
+        company: 'Apple inc.',
+        desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+        review: review,
+    },
+]
+export const faqsData = [
+    {
+        question: 'What are the services provided to customers?',
+        ans: 'Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.',
+    },
+    {
+        question: 'How can I submit a proposal for cooperation?',
+        ans: 'Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.',
+
+    },
+    {
+        question: 'I come from a faraway place, can collaboration be done full time online through several meeting applications?',
+        ans: 'Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.',
+
+    },
+    {
+        question: 'How do I get the payment complete?',
+        ans: 'Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.',
+    },
+    {
+        question: 'How long can the collaboration last?',
+        ans: 'Hello, we provide various services to help your business grow and develop. We help provide ideas, create designs, develop websites and mobile applications, provide support for the growth of business ideas, to help customers market their products online through the marketplace.',
+
     },
 ]

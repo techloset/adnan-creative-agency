@@ -5,23 +5,15 @@ import facebook from '../../assets/svg-icon/facebook.svg'
 import instagram from '../../assets/svg-icon/instagram.svg'
 import linkedin from '../../assets/svg-icon/linkedin.svg'
 import twitter from '../../assets/svg-icon/twitter.svg'
-import send from '../../assets/svg-icon/send.svg'
 
 
 
 function Footer() {
     return (
-        <div className='bg-[#00113B] pb-[3.8rem]'>
+        <div className='bg-[#00113B] pb-[3.8rem] z-20 block'>
 
-            <div className='max-w-[70rem] mx-auto'>
-                <div className='bg-[#4C40F7] text-white rounded-[1.3rem] pt-[3.7rem] pb-20 flex flex-col items-center'>
-                    <p className='font-medium text-base'>Get Notified About Project </p>
-                    <h1 className='mt-4 mb-8 font-semibold  leading-[3.5rem] text-[2.6rem]'>Subscribe Now</h1>
-                    <div className='w-[500px]  relative '>
-                        <input className='px-7 h-[4.8rem] w-full rounded-xl' type='text' placeholder='Email' />
-                        <img className='absolute top-[35%] bottom-[50%] right-7' src={send} alt='sending icon' />
-                    </div>
-                </div>
+            <div className='max-w-[70rem] mx-auto pt-64'>
+
                 <div className='flex gap-[6.4rem] pb-11'>
                     <div className='flex flex-col gap-8 max-w-[22.5rem]'>
                         <div className='bg-[#4C40F7] w-12 h-12 flex justify-center items-center rounded-xl shadow-xl' ><img src={logo} alt='logo' /></div>

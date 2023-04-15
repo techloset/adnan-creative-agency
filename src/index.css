@@ -6,8 +6,12 @@
 
 
 
-*
-{
+* {
   font-family: Poppins;
 
+}
+
+.slick-dots.li.button li.slick-active div {
+  background-color: #FFCC00 !important;
+  border-radius: 2px;
 }
