@@ -23,7 +23,7 @@ function FirstSection() {
                     </div>
                 </div>
             </div>
-            <img className='absolute  top-[18%] -z-20 ' src={bg} alt='wave' />
+            <img className='absolute lg:block hidden  top-[18%] -z-20 ' src={bg} alt='wave' />
 
         </div>
 

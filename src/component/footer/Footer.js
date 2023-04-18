@@ -12,7 +12,7 @@ function Footer() {
     return (
         <div className='bg-[#00113B] pb-[3.8rem] z-20 block'>
             <div className='xl:px-40 px-6  md:px-6 pt-64'>
-                <div className='flex flex-wrap justify-center xl:gap-[6.4rem] gap-10 pb-11'>
+                <div className='flex flex-wrap justify-center xl:justify-between gap-10 pb-11'>
                     <div className='flex flex-col gap-8 md:max-w-[22.5rem] max-w-full'>
                         <div className='bg-[#4C40F7] w-12 h-12 flex justify-center items-center rounded-xl' style={{background: '#4C40F7', boxShadow: '-5px 10px 30px rgba(76, 64, 247, 0.5)'}} ><img src={logo} alt='logo' /></div>
                         <p className='  text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -43,7 +43,7 @@ function Footer() {
                             {/* <li className='font-medium text-base'>About</li> */}
                         </ul>
                     </div>
-                    <div className='flex gap-[0.6rem]'>
+                    <div className='flex  gap-[0.6rem]'>
                         <div className='bg-[#4C40F7] flex justify-center items-center w-10 h-10 rounded-full '>
                             <img src={facebook} alt='facebook' />
                         </div>

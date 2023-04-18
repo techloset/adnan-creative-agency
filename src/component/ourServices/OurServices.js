@@ -16,7 +16,7 @@ function OurServices() {
                 <div className='flex flex-wrap justify-center gap-8 mt-[3.8rem]  '>
                     {
                         data.map((item, index) => {
-                            return <ServicesCards data={item} onSetActive={() => setActiveIndex(index + 1)} isActive={index === activeIndex - 1} />
+                            return <ServicesCards key={index} data={item} onSetActive={() => setActiveIndex(index + 1)} isActive={index === activeIndex - 1} />
                         })
                     }
                 </div>

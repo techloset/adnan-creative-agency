@@ -19,7 +19,7 @@ function Customer() {
 
                 </div>
                 <div className='xl:max-w-[460px] max-w-full'>
-                    <h1 className='md:leading-[4.5rem] leading:[3rem] md:text-[3.5rem] text-2xl font-semibold'>Customer satisfaction is our first priority</h1>
+                    <h1 className='md:leading-[4.5rem] leading:3rem md:text-[3.5rem] text-2xl font-semibold'>Customer satisfaction is our first priority</h1>
                     <p className='font-normal text-lg leading-8  text-[#6B6B6B] my-9'>We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:</p>
                     <div className='flex gap-6 my-4'>
                         <img src={icon} alt='icon' />
