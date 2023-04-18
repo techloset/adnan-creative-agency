@@ -15,54 +15,55 @@ import jquery from '../../assets/svg-icon/jquery.svg'
 import philps from '../../assets/svg-icon/philps.svg'
 import pirelli from '../../assets/svg-icon/pirelli.svg'
 import amazon from '../../assets/svg-icon/amazon.svg'
+import bg from '../../assets/bg-image-1.png'
 
 
 
 function WorkSpace() {
     return (
-        <div className='py-[12.5rem] '>
-            <div className='max-w-[70rem] mx-auto '>
+        <div className='sm:py-[12.5rem] py-20  relative'>
+            <div className='lg:px-40 px-6 '>
                 <h1 className='text-[#FF3B2F] text-xl mb-5 font-semibold text-center'>Working space</h1>
-                <p className='mb-[3.7rem] text-center font-semibold mx-auto text-[2.6rem]'>Let’s meet our interior room decoration</p>
-                <div className='flex gap-8'>
-                    <div className='flex flex-col gap-[1.9rem]'>
+                <p className='mb-[3.7rem] text-center font-semibold sm:text-[2.6rem] text-2xl leading-8 sm:leading-[3.5rem]'>Let’s meet our interior room decoration</p>
+                <div className='flex gap-8 justify-center flex-wrap md:flex-nowrap '>
+                    <div className='flex w-[300px] md:w-full flex-col gap-[1.9rem]'>
                         <img src={mask6} alt='mask' />
                         <img src={mask5} alt='mask' />
                     </div>
-                    <div className='flex flex-col gap-[1.9rem]'>
+                    <div className='flex w-[300px] md:w-full flex-col gap-[1.9rem]'>
                         <img src={mask4} alt='mask' />
                         <img src={mask3} alt='mask' />
                     </div>
-                    <div className='flex flex-col gap-[1.9rem]'>
+                    <div className='flex flex-col w-[300px] md:w-full gap-[1.9rem]'>
                         <img src={mask1} alt='mask' />
                         <img src={mask2} alt='mask' />
                     </div>
                 </div>
-                <div className='mt-[12.5rem]'>
+                <div className='md:mt-[12.5rem] mt-20'>
                     <h1 className='text-center text-xl mb-5 font-semibold text-[#FF2D59]'>Some of Our Great Customers</h1>
-                    <p className='text-center b-[3.7rem] font-semibold mx-auto text-[2.6rem]'>Some of the companies we have worked with</p>
-                    <div className='mt-20  '>
-                        <div className='flex justify-between'>
-                            <img src={amazon} alt='' />
-                            <img src={jeep} alt='' />
-                            <img src={careem} alt='' />
-                            <img src={hubspot} alt='' />
-                            <img src={jquery} alt='' />
+                    <p className='text-center b-[3.7rem] font-semibold mx-auto sm:text-[2.6rem] text-2xl leading-8 sm:leading-[3.5rem]'>Some of the companies we have worked with</p>
+                    <div className='mt-5  '>
+                        <div className='flex justify-center md:gap-x-28 gap-x-10 flex-wrap'>
+                            <img className='mt-[3.7rem]' src={amazon} alt='amazon' />
+                            <img className='mt-[3.7rem]' src={jeep} alt='jeep' />
+                            <img className='mt-[3.7rem]' src={careem} alt='careem' />
+                            <img className='mt-[3.7rem]' src={hubspot} alt='hubspot' />
+                            <img className='mt-[3.7rem]' src={jquery} alt='jquery' />
                         </div>
-                        <div className='flex justify-between mt-[3.7rem]'>
-                            <img src={canon} alt='' />
-                            <img src={fedex} alt='' />
-                            <img src={bitcoin} alt='' />
-                            <img src={pirelli} alt='' />
-                            <img src={philps} alt='' />
+                        <div className='flex justify-center md:gap-x-20 gap-x-10  flex-wrap  '>
+                            <img className='mt-[3.7rem]' src={canon} alt='canon' />
+                            <img className='mt-[3.7rem]' src={fedex} alt='fedex' />
+                            <img className='mt-[3.7rem]' src={bitcoin} alt='bitcoin' />
+                            <img className='mt-[3.7rem]' src={pirelli} alt='pirelli' />
+                            <img className='mt-[3.7rem]' src={philps} alt='philps' />
                         </div>
 
                     </div>
                 </div>
 
             </div>
-
-
+            <img className='absolute  top-[16%] -z-20' src={bg} alt='wave' />
+            <img className='absolute  top-[42%] -z-20' src={bg} alt='wave' />
         </div>
     )
 }

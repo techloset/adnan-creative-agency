@@ -7,26 +7,21 @@ function ServicesCards({ data, onSetActive, isActive }) {
     const style = {
 
     }
-
     const hoverStyles = {
         backgroundColor: isHoverd ? data.bgColor : 'white',
-        transition: 'background-color 0.5s ease',
+        transition: 'background-color 0.5s ease-in ',
         color: isHoverd ? "white" : "#6B6B6B",
-        boxShadow: isHoverd ? data.bgShawod : ''
-
+        boxShadow: isHoverd ? data.bgShawod : '',
     };
 
     return (
-        <div className='shadow-md rounded-lg py-11 px-[1.80rem] relative'
+        <div className='shadow-md rounded-lg py-11 w-[352px] h-[458px] sm:px-[1.9rem] px-2 mb-7 relative'
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
 
             style={hoverStyles}
         >
-            <div className='' >
-            </div>
-
-            <div className=' flex flex-col items-center'>
+            <div className=' flex flex-col items-center '>
                 <div className='  w-24 h-24 flex justify-center items-center rounded-full mb-11'
                     style={{ backgroundColor: isHoverd ? 'white' : data.bgColor, filter: data.shawod }}>
                     <img src={isHoverd ? data.img : data.image} alt='services' />

@@ -1,14 +1,15 @@
 import React from 'react'
 import Dropdown from '../dropdown/Dropdown'
 import { faqsData } from '../../constent/Constent'
+import image from '../../assets/image-1.png'
 
 function Frequently() {
   return (
-    <div className=' py-[12.5rem]'>
-      <div className='max-w-[70rem] mx-auto'>
-        <div className='mb-[3.8rem]'>
+    <div className=' sm:py-[12.5rem] py-24 relative'>
+      <div className='lg:px-40 px-6'>
+        <div className='mb-[3.8rem] '>
           <p className='text-center font-semibold text-xl text-[#FF2D59] mb-5'>Frequently Ask Question</p>
-          <h1 className='text-center font-semibold text-[2.6rem] leading-[3.5rem]'>Some of our frequently asked questions</h1>
+          <h1 className='text-center font-semibold  sm:text-[2.6rem] sm:leading-[3.5rem] leading-8 text-2xl'>Some of our frequently asked questions</h1>
         </div>
         {
           faqsData.map((item) => {
@@ -16,7 +17,9 @@ function Frequently() {
           })
         }
       </div>
-
+      <div>
+        <img className=' absolute -z-50 h-[900px] top-[12%]' src={image} alt='image' />
+      </div>
     </div>
   )
 }

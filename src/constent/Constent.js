@@ -85,29 +85,6 @@ export const data = [
     },
 ]
 
-export const customer = [
-    {
-        title: '70K+',
-        desc: 'We have more than customers',
-        mt: 56
-    },
-    {
-        title: '100+',
-        desc: 'Projects we have completed',
-    },
-    {
-        title: '10M+',
-        desc: 'People who are helped because of our hard work',
-
-    },
-
-    {
-        title: '200+',
-        desc: 'Support from world-renowned companies',
-        mt: -56
-    },
-]
-
 
 export const testimonalsData = [
     {

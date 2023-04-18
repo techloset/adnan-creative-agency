@@ -9,9 +9,9 @@ function Dropdown({ faqsData }) {
 
 
     return (
-        <div className='mb-8'>
-            <div className={`${show ? ' border-[#4C40F7]' : 'border'} border rounded-lg p-8`}>
-                <div className='flex justify-between  items-center'>
+        <div className='mb-8 '>
+            <div className={`${show ? ' border-[#4C40F7]' : 'border'} bg-white  border rounded-lg sm:p-8 p-6 `}>
+                <div className='flex justify-between gap-8 items-center'>
                     <h1 className=' font-medium text-base'>{faqsData?.question}</h1>
                     <div onClick={() => setShow(!show)}>
                         <img className={`${show ? 'rotate-180' : 'rotate-0'}`} src={top} alt='' />

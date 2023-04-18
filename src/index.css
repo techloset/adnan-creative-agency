@@ -3,15 +3,17 @@
 @tailwind utilities;
 
 
-
+body {
+  overflow-x: hidden !important;
+}
 
 
 * {
   font-family: Poppins;
 
-}
+}   
 
 .slick-dots.li.button li.slick-active div {
-  background-color: #FFCC00 !important;
+  background-color: white!important;
   border-radius: 2px;
 }

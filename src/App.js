@@ -14,7 +14,7 @@ import FirstSection from './component/firstSection/FirstSection';
 
 function App() {
   return (
-    <div>
+    <div className=''>
       <Header />
       <FirstSection />
       <OurServices />

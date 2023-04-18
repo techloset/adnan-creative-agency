@@ -1,29 +1,51 @@
 import React, { useState } from 'react'
 import logo from '../../assets/svg-icon/logo.svg'
+import { ReactComponent as Menu } from '../../assets/svg-icon/menu-icon.svg'
+
 
 
 
 function Header() {
   const [active, setActive] = useState()
+  const [showTabs, setShowTabs] = useState()
 
 
-  const TabClick = (index) => {
-    setActive(index)
+  function toggleTabs() {
+    setShowTabs(!showTabs);
   }
 
+
+
   return (
-    <div className='bg-white flex justify-around items-center h-32'>
+    <div className='bg-white w-full'>
+      <div className='flex md:justify-around justify-between items-center h-32 px-6 md:0px '>
+        <div className='bg-[#4C40F7] cursor-pointer  h-9 w-9 md:w-12 md:h-12 flex justify-center items-center rounded-xl' style={{ background: '#4C40F7', boxShadow: '-5px 10px 30px rgba(76, 64, 247, 0.5)' }} ><img src={logo} alt='logo' /></div>
+        <div className='md:block hidden'>
+          <ul className='flex list-none gap-[5.1rem] text-[#6B6B6B]'>
+            <li className='font-semibold text-[1.3rem] cursor-pointer text-[#4C40F7]'>Home</li>
+            <li className='font-semibold text-[1.3rem] cursor-pointer'>Works</li>
+            <li className='font-semibold text-[1.3rem] cursor-pointer'>About</li>
+          </ul>
+        </div>
+        <div className='bg-[#4C40F7] md:block hidden  cursor-pointer rounded-xl shadow-xl shadow-[#4C40F740] px-9 py-5 text-white'>Contact us</div>
 
-      <div className='bg-[#4C40F7] w-12 h-12 flex justify-center items-center rounded-xl shadow-xl' ><img src={logo} alt='logo' /></div>
-      <div className=''>
-        <ul className='flex list-none gap-[5.1rem] text-[#6B6B6B]'>
-          <li className={`font-semibold text-[1.3rem] ${active === 0 ? 'text-blue' : ''}`} onClick={() => TabClick(0)}>About</li>
-          <li className={`font-semibold text-[1.3rem] ${active === 0 ? 'text-blue' : ''}`} onClick={() => TabClick(0)}>Works</li>
-          <li className={`font-semibold text-[1.3rem] ${active === 0 ? 'text-blue' : ''}`} onClick={() => TabClick(0)}>About</li>
-        </ul>
+        <div onClick={toggleTabs} className='block md:hidden cursor-pointer' >
+          <Menu />
+        </div>
+
       </div>
-      <div className='bg-[#4C40F7] rounded-xl shadow-xl shadow-[#4C40F740] px-9 py-5 text-white'>Contact us</div>
-
+      {showTabs ? (
+        <div className='flex justify-center md:hidden'>
+          <ul className=' text-[#6B6B6B] flex flex-col items-center gap-10'>
+            <li className='font-semibold text-sm' >Home</li>
+            <li className='font-semibold text-sm' >Works</li>
+            <li className='font-semibold text-sm '>About</li>
+            <div className='bg-[#4C40F7] cursor-pointer rounded-xl shadow-xl shadow-[#4C40F740] px-5 py-3 text-white'>Contact us</div>
+            <li></li>
+          </ul>
+        </div>)
+        : null
+      }
     </div>
   )
 }

@@ -1,16 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import exclude from '../../assets/svg-icon/exclude.svg'
-import vector from '../../assets/svg-icon/vector.svg'
-import arrow from '../../assets/svg-icon/right-arrow .svg'
+import image from '../../assets/image.png'
+
 
 
 
 function Sliders() {
-
-
     const slider = React.useRef(null);
     const settings = {
         dots: true,
@@ -20,7 +18,6 @@ function Sliders() {
                 style={{
 
                     borderRadius: "100px",
-                    // padding: "45px"
                 }}
             >
                 <ul style={{ margin: "0px" }}> {dots} </ul>
@@ -31,7 +28,7 @@ function Sliders() {
                 style={{
                     width: "15px",
                     height: '4px',
-                    backgroundColor: 'white',
+                    backgroundColor: '#FFCC00 ',
                     borderRadius: '2'
                 }}
             >
@@ -44,39 +41,54 @@ function Sliders() {
         slidesToScroll: 1
     };
 
-
     return (
-        <div className='bg-[#FE9602] py-[6.2rem]  '>
+        <div className='bg-[#FE9602] py-[6.2rem]  relative'>
             <div className='max-w-[70rem] mx-auto relative '>
                 <Slider ref={slider} {...settings} className=' text-white'>
                     <div className="">
                         <div className='flex justify-center'> <img src={exclude} alt='exclude' /></div>
 
-                        <p className=' max-w-[720px] mx-auto text-[1.8rem] my-11  w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
+                        <p className=' lg:max-w-[720px] max-w-[450px] mx-auto text-2xl lg:text-[1.8rem] leading-10 my-11  w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
                         <p className=' text-center  text-xl font-semibold leading-7 mb-2'>Mark Garfield</p>
                         <p className=' text-center text-xl font-semibold leading-7'>CEO & Head of Product</p>
                     </div>
                     <div className="">
                         <div className='flex justify-center'> <img src={exclude} alt='exclude' /></div>
-                        <p className=' max-w-[720px] mx-auto text-[1.8rem] my-11  w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
+                        <p className=' lg:max-w-[720px] max-w-[450px] mx-auto text-2xl my-11 lg:text-[1.8rem] leading-10 w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
                         <p className=' text-center  text-xl font-semibold leading-7 mb-2'>Mark Garfield</p>
                         <p className=' text-center text-xl font-semibold leading-7 mb-6'>CEO & Head of Product</p>
                     </div>
                     <div className="">
                         <div className='flex justify-center'> <img src={exclude} alt='exclude' /></div>
-                        <p className=' max-w-[720px] mx-auto text-[1.8rem] my-11  w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
+                        <p className=' lg:max-w-[720px] max-w-[450px] mx-auto text-2xl my-11 lg:text-[1.8rem] leading-10 w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
                         <p className=' text-center  text-xl font-semibold leading-7 mb-2'>Mark Garfield</p>
                         <p className=' text-center text-xl font-semibold leading-7'>CEO & Head of Product</p>
                     </div>
                     <div className="">
                         <div className='flex justify-center'> <img src={exclude} alt='exclude' /></div>
-                        <p className=' max-w-[720px] mx-auto text-[1.8rem] my-11  w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
+                        <p className=' lg:max-w-[720px] max-w-[450px] mx-auto text-2xl my-11 lg:text-[1.8rem] leading-10  w-full text-center'>We are serious about providing our best service to all the customers we help. Customers satisfaction is our number one priority.</p>
                         <p className=' text-center  text-xl font-semibold leading-7 mb-2'>Mark Garfield</p>
                         <p className=' text-center text-xl font-semibold leading-7'>CEO & Head of Product</p>
                     </div>
                 </Slider>
-                <button className='absolute top-[50%] left-[5%] rounded-full w-11 h-11 bg-white hover:bg-[#4C40F7] flex justify-center items-center' onClick={() => slider?.current?.slickPrev()}><img src={arrow} alt='arrow' /></button>
-                <button className='absolute top-[50%] right-[5%] rounded-full w-11 h-11 bg-white hover:bg-[#4C40F7] flex justify-center items-center ' onClick={() => slider?.current?.slickNext()}><img src={vector} alt='arrow' /></button>
+                <button className='absolute top-[50%] left-[5%] rounded-full w-11 h-11 bg-white hover:bg-[#4C40F7] text-[#ABAFC7] hover:text-white  flex justify-center items-center' onClick={() => {
+                    slider?.current?.slickPrev()
+                }}
+                ><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.58917 10.5103L6.41083 11.6886L0.821667 6.09942L6.41083 0.510254L7.58917 1.68859L4.01167 5.26609H12V6.93275H4.01167L7.58917 10.5103Z" fill="currentColor" />
+                    </svg>
+                </button>
+
+                <button className='absolute top-[50%] right-[5%] rounded-full w-11 h-11 bg-white hover:bg-[#4C40F7] text-[#ABAFC7] hover:text-white flex justify-center items-center' onClick={() => {
+                    slider?.current?.slickNext()
+                }}
+                ><svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M4.41083 10.5103L5.58917 11.6886L11.1783 6.09942L5.58917 0.510254L4.41083 1.68859L7.98833 5.26609H0V6.93275H7.98833L4.41083 10.5103Z" fill="currentColor" />
+                    </svg>
+                </button>
+            </div>
+            <div className=''>
+                <img className='absolute -z-50 w-96 h-[900px] top-[25%] right-0' src={image} alt='vdvj' />
             </div>
         </div>
     )
