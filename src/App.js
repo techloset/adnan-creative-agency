@@ -11,6 +11,10 @@ import Testimonials from './component/testimonials/Testimonials';
 import Slider from './component/slider/Slider';
 import Frequently from './component/ frequently / Frequently';
 import FirstSection from './component/firstSection/FirstSection';
+// import { Counter } from './component/counter/Counter';
+
+
+
 
 function App() {
   return (
@@ -19,6 +23,7 @@ function App() {
       <FirstSection />
       <OurServices />
       <Documentation />
+      {/* <Counter /> */}
       <Customer />
       <WorkSpace />
       <Slider />

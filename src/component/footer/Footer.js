@@ -14,7 +14,7 @@ function Footer() {
             <div className='xl:px-40 px-6  md:px-6 pt-64'>
                 <div className='flex flex-wrap justify-center xl:justify-between gap-10 pb-11'>
                     <div className='flex flex-col gap-8 md:max-w-[22.5rem] max-w-full'>
-                        <div className='bg-[#4C40F7] w-12 h-12 flex justify-center items-center rounded-xl' style={{background: '#4C40F7', boxShadow: '-5px 10px 30px rgba(76, 64, 247, 0.5)'}} ><img src={logo} alt='logo' /></div>
+                        <div className='bg-[#4C40F7] w-12 h-12 flex justify-center items-center rounded-xl' style={{ background: '#4C40F7', boxShadow: '-5px 10px 30px rgba(76, 64, 247, 0.5)' }} ><img src={logo} alt='logo' /></div>
                         <p className='  text-white opacity-75'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                     <div className='flex flex-col gap-8'>
@@ -33,9 +33,9 @@ function Footer() {
                     </div>
                 </div>
                 <hr />
-                <div className='flex md:justify-between justify-center gap-6 flex-wrap items-center mt-[3.2rem]'><p className='text-white font-medium leading-6 text-base'>© 2021 Creative Agency</p>
+                <div className='flex md:justify-between justify-center gap-6 flex-wrap items-center mt-[3.2rem]'><p className='text-[#ABAFC7] font-medium leading-6 text-base'>© 2021 Creative Agency</p>
                     <div>
-                        <ul className='flex gap-9 list-none text-white'>
+                        <ul className='flex gap-9 list-none text-[#ABAFC7]'>
                             <li className='font-medium text-base'>Home</li>
                             <li className='font-medium text-base'>Works</li>
                             <li className='font-medium text-base'>About</li>
