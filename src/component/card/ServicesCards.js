@@ -15,7 +15,7 @@ function ServicesCards({ data, onSetActive, isActive }) {
     };
 
     return (
-        <div className='shadow-md rounded-lg py-11 w-[352px] h-[458px] sm:px-[1.9rem] px-2 mb-7 relative'
+        <div className='shadow-md rounded-lg py-11 w-[352px] h-[458px] sm:px-[1.9rem] px-2 mb-7 relative cursor-pointer'
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
 
@@ -26,8 +26,9 @@ function ServicesCards({ data, onSetActive, isActive }) {
                     style={{ backgroundColor: isHoverd ? 'white' : data.bgColor, filter: data.shawod }}>
                     <img src={isHoverd ? data.img : data.image} alt='services' />
                 </div>
-                <h1 className=' font-semibold text-xl left-7'>{data.title}</h1>
-                <p className='text-center text-lg font-normal leading-8 mt-4 mb-11'>{data.desc}</p>
+                <h1 className=' font-semibold text-xl text-[#111029] hover:text-white left-7'
+                style={{color:isHoverd ? "white":"#111029"}}>{data.title}</h1>
+                <p className='text-center sm:text-lg text-base font-normal leading-8 mt-4 mb-11'>{data.desc}</p>
                 <div className='w-11 h-11 rounded-full bg-gray-100 flex justify-center items-center'>
                     <img src={data.icon} alt='icon' />
                 </div>

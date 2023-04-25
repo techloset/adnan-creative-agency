@@ -26,8 +26,6 @@ function FirstSection() {
             <img className='absolute lg:block hidden  top-[18%] -z-20 ' src={bg} alt='wave' />
 
         </div>
-
-
     )
 }
 

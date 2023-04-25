@@ -15,7 +15,7 @@ function Footer() {
                 <div className='flex flex-wrap justify-center xl:justify-between gap-10 pb-11'>
                     <div className='flex flex-col gap-8 md:max-w-[22.5rem] max-w-full'>
                         <div className='bg-[#4C40F7] w-12 h-12 flex justify-center items-center rounded-xl' style={{background: '#4C40F7', boxShadow: '-5px 10px 30px rgba(76, 64, 247, 0.5)'}} ><img src={logo} alt='logo' /></div>
-                        <p className='  text-white'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        <p className='  text-white opacity-75'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                     <div className='flex flex-col gap-8'>
                         <h1 className='text-white font-semibold text-xl  leading-7'>Our Office</h1>
@@ -25,8 +25,8 @@ function Footer() {
                     </div>
                     <div className='flex flex-col text-white gap-8'>
                         <h1 className='font-semibold text-xl leading-7'>Contact</h1>
-                        <div>
-                            <p className='font-medium text-base leading-6 '>Jl KH Samanhudi <br />Metro Atom Plaza Bl<br /> AKS 1/11, Dki Jakarta</p>
+                        <div className='text-white opacity-75'>
+                            <p className='font-medium text-base leading-6  '>Jl KH Samanhudi <br />Metro Atom Plaza Bl<br /> AKS 1/11, Dki Jakarta</p>
                             <p className='font-medium text-base leading-6 my-5'>info@yourdomain.com</p>
                             <p className='font-medium text-base leading-6 '>+62 (0) 000 0000 00</p>
                         </div>

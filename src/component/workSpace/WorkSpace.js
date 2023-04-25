@@ -43,14 +43,14 @@ function WorkSpace() {
                     <h1 className='text-center text-xl mb-5 font-semibold text-[#FF2D59]'>Some of Our Great Customers</h1>
                     <p className='text-center b-[3.7rem] font-semibold mx-auto sm:text-[2.6rem] text-2xl leading-8 sm:leading-[3.5rem]'>Some of the companies we have worked with</p>
                     <div className='mt-5  '>
-                        <div className='flex justify-center md:gap-x-28 gap-x-10 flex-wrap'>
+                        <div className='flex justify-center md:gap-x-28 gap-x-10 xl:flex-nowrap flex-wrap'>
                             <img className='mt-[3.7rem]' src={amazon} alt='amazon' />
                             <img className='mt-[3.7rem]' src={jeep} alt='jeep' />
                             <img className='mt-[3.7rem]' src={careem} alt='careem' />
                             <img className='mt-[3.7rem]' src={hubspot} alt='hubspot' />
                             <img className='mt-[3.7rem]' src={jquery} alt='jquery' />
                         </div>
-                        <div className='flex justify-center md:gap-x-20 gap-x-10  flex-wrap  '>
+                        <div className='flex justify-center md:gap-x-20 gap-x-10 xl:flex-nowrap flex-wrap  '>
                             <img className='mt-[3.7rem]' src={canon} alt='canon' />
                             <img className='mt-[3.7rem]' src={fedex} alt='fedex' />
                             <img className='mt-[3.7rem]' src={bitcoin} alt='bitcoin' />
