@@ -11,7 +11,7 @@ import Testimonials from './component/testimonials/Testimonials';
 import Slider from './component/slider/Slider';
 import Frequently from './component/ frequently / Frequently';
 import FirstSection from './component/firstSection/FirstSection';
-// import { Counter } from './component/counter/Counter';
+import Login from './pages/signin/Signin';
 
 
 
@@ -22,8 +22,8 @@ function App() {
       <Header />
       <FirstSection />
       <OurServices />
+      {/* <Login/> */}
       <Documentation />
-      {/* <Counter /> */}
       <Customer />
       <WorkSpace />
       <Slider />

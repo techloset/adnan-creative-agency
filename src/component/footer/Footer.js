@@ -26,7 +26,7 @@ function Footer() {
                     <div className='flex flex-col text-white gap-8'>
                         <h1 className='font-semibold text-xl leading-7'>Contact</h1>
                         <div className='text-white opacity-75'>
-                            <p className='font-medium text-base leading-6  '>Jl KH Samanhudi <br />Metro Atom Plaza Bl<br /> AKS 1/11, Dki Jakarta</p>
+                            <p className='font-medium text-base leading-6  lg:max-w-[170px] max-w-full '>Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta</p>
                             <p className='font-medium text-base leading-6 my-5'>info@yourdomain.com</p>
                             <p className='font-medium text-base leading-6 '>+62 (0) 000 0000 00</p>
                         </div>

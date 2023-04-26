@@ -10,9 +10,9 @@ function FirstSection() {
                 <div className='flex gap-6 justify-center lg:justify-between items-center flex-wrap'>
                     <div className='md:mt-28 mt-14'>
                         <h1 className=' font-semibold lg:max-w-sm  md:max-w-full tracking-[-0.4px] w-full text-3xl leading-9 xl:text-[3.5rem] text-[#111029] md:leading-[4.5rem]'>
-                            <span className=' whitespace-pre-wrap lg:whitespace-nowrap'>Make your business</span> <span className='text-[#FF6800] whitespace-nowrap'> more powerful </span>
+                            <span className=' whitespace-pre-wrap lg:whitespace-nowrap'>Make your business</span> <span className='text-[#FF6800]  whitespace-nowrap'> more powerful </span>
                         </h1>
-                        <p className='font-semibold text-3xl leading-9 xl:text-[3.5rem] text-[#111029]'>with us</p>
+                        <p className='font-semibold text-3xl leading-9 xl:text-[3.5rem] xl:mt-3 mt-0 text-[#111029]'>with us</p>
                         <p className=' font-normal text-lg leading-8 text-[#6B6B6B] md:max-w-md lg:max-w-[365px] max-w-full my-6'>We provide various services to make your business grow and get bigger. Your satisfaction is our first priority.</p>
                         <div className='flex justify-start'>
                             <Button title='Get Started' />
