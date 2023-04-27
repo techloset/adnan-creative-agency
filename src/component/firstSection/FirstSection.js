@@ -7,7 +7,7 @@ function FirstSection() {
     return (
         <div className='relative '>
             <div className='md:pb-[12.5rem] pb-20 pl-6 lg:pl-40 pr-6'>
-                <div className='flex gap-6 justify-center lg:justify-between items-center flex-wrap'>
+                <div className='flex gap-6 flex-col-reverse lg:flex-row justify-center lg:justify-between items-center flex-wrap'>
                     <div className='md:mt-28 mt-14'>
                         <h1 className=' font-semibold lg:max-w-sm  md:max-w-full tracking-[-0.4px] w-full text-3xl leading-9 xl:text-[3.5rem] text-[#111029] md:leading-[4.5rem]'>
                             <span className=' whitespace-pre-wrap lg:whitespace-nowrap'>Make your business</span> <span className='text-[#FF6800]  whitespace-nowrap'> more powerful </span>

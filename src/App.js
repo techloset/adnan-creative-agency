@@ -12,6 +12,8 @@ import Slider from './component/slider/Slider';
 import Frequently from './component/ frequently / Frequently';
 import FirstSection from './component/firstSection/FirstSection';
 import Login from './pages/signin/Signin';
+import Counter from './component/counter/Counter';
+import Signup from './pages/signup/Signup';
 
 
 
@@ -22,7 +24,6 @@ function App() {
       <Header />
       <FirstSection />
       <OurServices />
-      {/* <Login/> */}
       <Documentation />
       <Customer />
       <WorkSpace />
@@ -31,6 +32,10 @@ function App() {
       <Testimonials />
       <Project />
       <Footer />
+      <Counter />
+      {/* <Login /> */}
+      {/* <Signup /> */}
+
     </div>
   );
 }

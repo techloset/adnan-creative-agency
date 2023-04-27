@@ -1,27 +1,27 @@
-import { createSlice } from "@reduxjs/toolkit";
+import { createSlice } from "@reduxjs/toolkit"
 
 
-
-const initialState = {
+export const initialState = {
     value: 0,
 }
 
-export const CounterSlicer = createSlice({
+
+export const counterSlicer = createSlice({
     name: 'Counter',
     initialState,
     reducers: {
-        increment: (state,action) => {
-            state.value += action.payload
+        increment: (state) => {
+            state.value += 1
         },
         decrement: (state) => {
             state.value -= 1
         },
         reset: (state, action) => {
             state.value = action.payload
-        },
-
+        }
     }
 })
-export const { increment, decrement, reset } = CounterSlicer.actions
 
-export default CounterSlicer.reducer
+export const { increment, decrement, reset, } = counterSlicer.actions
+
+export default counterSlicer.reducer

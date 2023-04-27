@@ -3,7 +3,7 @@ import React from 'react'
 function TestimonalsCard({ testimonalsData }) {
 
     return (
-        <div className='bg-white rounded-[1.3rem] sm:mt-[7.5rem] mt-16 cursor-pointer hover:shadow-xl hover:shadow-[-15px 20px 70px rgba(76, 64, 247, 0.2);] sm:px-8 px-6 sm:pb-11 pb-8'>
+        <div className='bg-white rounded-[1.3rem] sm:mt-[7.5rem] sm:max-w-full max-w-[310px] mt-16 cursor-pointer hover:shadow-xl hover:shadow-[-15px 20px 70px rgba(76, 64, 247, 0.2);] xl:px-8 md:px-4 px-6 sm:pb-11 pb-8'>
             <div className='flex flex-col items-center'>
                 <img className='-mt-[4rem] ' src={testimonalsData?.img} alt='profile' />
                 <h1 className='text-[#111029] mt-[1.9rem] mb-2 font-semibold text-center text-2xl'>{testimonalsData?.name}</h1>
