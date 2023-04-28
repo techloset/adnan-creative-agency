@@ -17,7 +17,7 @@ function Customer() {
                     </div>
                 </div>
                 <div className='lg:max-w-[460px] max-w-full whitespace-wrap'>
-                    <h1 className='md:leading-[4.5rem] leading:3rem xl:text-[3.5rem] text-4xl font-semibold'>Customer satisfaction is our first priority</h1>
+                    <h1 className='md:leading-[4.5rem] leading:3rem lg:text-[3.5rem] sm:text-4xl text-xl font-semibold'>Customer satisfaction is our first priority</h1>
                     <p className='font-normal text-lg leading-8 text-[#6B6B6B] my-9'>We serve many customers, ranging from small businesses, medium entrepreneurs, to world-renowned companies. Their satisfaction is our pleasure. We strive to provide the best service by:</p>
                     <div className='flex gap-6 my-4'>
                         <img src={icon} alt='icon' />

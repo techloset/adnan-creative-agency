@@ -9,7 +9,7 @@ function Frequently() {
       <div className='lg:px-40 px-6'>
         <div className='mb-[3.8rem] '>
           <p className='text-center font-semibold text-xl text-[#FF2D59] mb-5'>Frequently Ask Question</p>
-          <h1 className='text-center font-semibold  sm:text-[2.6rem] sm:leading-[3.5rem] leading-8 text-2xl'>Some of our frequently asked questions</h1>
+          <h1 className='text-center font-semibold xl:max-w-[1120px] lg:max-w-[650px] max-w-full mx-2 lg:mx-auto  xl:text-[2.6rem] leading-8 lg:leading-[3.5rem] text-xl lg:text-2xl'>Some of our frequently asked questions</h1>
         </div>
         {
           faqsData.map((item) => {

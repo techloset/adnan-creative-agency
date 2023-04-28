@@ -11,7 +11,7 @@ function OurServices() {
         <div className='relative pb-[6.2rem] flex flex-col justify-center items-center'>
             <div className='xl:max-w-[1120px]  lg:mx-6 md:mx-20   '>
                 <h1 className='text-[#FF2D59] text-xl font-semibold mb-5 text-center'>Our Services</h1>
-                <p className='text-center font-semibold  lg:text-[2.6rem] leading-8 lg:leading-[3.5rem] text-2xl'>The various services we provide to make your business more powerful</p>
+                <p className='text-center font-semibold xl:max-w-[1120px] lg:max-w-[650px] max-w-full mx-6 lg:mx-auto  xl:text-[2.6rem] leading-8 lg:leading-[3.5rem] text-xl lg:text-2xl'>The various services we provide to make your business more powerful</p>
 
                 <div className='grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-8  mt-[3.8rem]  '>
                     {

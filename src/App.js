@@ -32,9 +32,9 @@ function App() {
       <Testimonials />
       <Project />
       <Footer />
-      <Counter />
-      {/* <Login /> */}
-      {/* <Signup /> */}
+      {/* <Counter /> */}
+      {/* <Login />
+      <Signup /> */}
 
     </div>
   );
