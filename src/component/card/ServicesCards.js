@@ -4,9 +4,9 @@ function ServicesCards({ data, onSetActive, isActive }) {
 
     const [isHoverd, setHovered] = useState(false)
 
-    const style = {
+    // const style = {
 
-    }
+    // }
     const hoverStyles = {
         backgroundColor: isHoverd ? data.bgColor : 'white',
         transition: 'background-color 0.5s ease-in ',

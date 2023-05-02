@@ -11,8 +11,8 @@ function Testimonials() {
                 <h1 className='text-center font-semibold xl:max-w-[1120px] lg:max-w-[650px] max-w-full mx-6 lg:mx-auto  xl:text-[2.6rem] leading-8 lg:leading-[3.5rem] text-xl lg:text-2xlmt-5 mb-4 sm:mb-0'>Some testimonials from our customers</h1>
                 <div className='flex xl:gap-8 gap-4 flex-wrap justify-center'>
                     {
-                        testimonalsData.map((item) => {
-                            return <TestimonalsCard testimonalsData={item} />
+                        testimonalsData.map((item,index) => {
+                            return <TestimonalsCard key={index} testimonalsData={item} />
                         })
                     }
                 </div>

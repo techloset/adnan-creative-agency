@@ -12,8 +12,8 @@ function Frequently() {
           <h1 className='text-center font-semibold xl:max-w-[1120px] lg:max-w-[650px] max-w-full mx-2 lg:mx-auto  xl:text-[2.6rem] leading-8 lg:leading-[3.5rem] text-xl lg:text-2xl'>Some of our frequently asked questions</h1>
         </div>
         {
-          faqsData.map((item) => {
-            return <Dropdown faqsData={item} />
+          faqsData.map((item, index) => {
+            return <Dropdown key={index} faqsData={item} />
           })
         }
       </div>

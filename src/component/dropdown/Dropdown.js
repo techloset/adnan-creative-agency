@@ -5,7 +5,7 @@ function Dropdown({ faqsData }) {
 
     const [show, setShow] = useState(false)
 
-    console.log('faqsData', faqsData);
+    // console.log('faqsData', faqsData);
 
 
     return (

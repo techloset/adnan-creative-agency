@@ -50,7 +50,7 @@ export const data = [
         desc: 'We help develop company websites to be more professional and attractive',
         icon: arrow,
         bgColor: '#4ADB61',
-        shawod: 'drop-shadow(0px 15px 30px rgba(74, 219, 97, 0.4));',
+        shawod: 'drop-shadow(0px 15px 30px rgba(74, 219, 97, 0.4))',
         bgShawod: '-10px 30px 70px rgba(74, 219, 97, 0.4);'
     },
     {

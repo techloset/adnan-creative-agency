@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import logo from '../../assets/svg-icon/logo.svg'
 import { ReactComponent as Menu } from '../../assets/svg-icon/menu-icon.svg'
+import { useDispatch, useSelector } from 'react-redux'
+import { signout } from '../../redux/slice/authSlice'
 
 
 
@@ -14,7 +16,12 @@ function Header() {
     setShowTabs(!showTabs);
   }
 
+  const dispatch = useDispatch()
+  const data = useSelector((state) => state.authslice)
 
+  const handleLogout = () => {
+    dispatch(signout());
+  };
 
   return (
     <div className='bg-white w-full'>
@@ -37,11 +44,11 @@ function Header() {
       {showTabs ? (
         <div className='flex justify-center md:hidden'>
           <ul className=' text-[#6B6B6B] flex flex-col items-center gap-10'>
-            <li className='font-semibold text-sm' >Home</li>
+            <li className='font-semibold text-sm'><link to='/leanding-page'>Home</link></li>
             <li className='font-semibold text-sm' >Works</li>
             <li className='font-semibold text-sm '>About</li>
+            <li className='font-samibold text-sm ' onClick={handleLogout}>LogOut</li>
             <div className='bg-[#4C40F7] cursor-pointer rounded-xl shadow-xl shadow-[#4C40F740] px-5 py-3 text-white'>Contact us</div>
-            <li></li>
           </ul>
         </div>)
         : null

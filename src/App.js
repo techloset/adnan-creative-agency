@@ -14,6 +14,7 @@ import FirstSection from './component/firstSection/FirstSection';
 import Login from './pages/signin/Signin';
 import Counter from './component/counter/Counter';
 import Signup from './pages/signup/Signup';
+import Routting from './component/routting/Routting';
 
 
 
@@ -21,21 +22,8 @@ import Signup from './pages/signup/Signup';
 function App() {
   return (
     <div className=''>
-      <Header />
-      <FirstSection />
-      <OurServices />
-      <Documentation />
-      <Customer />
-      <WorkSpace />
-      <Slider />
-      <Frequently />
-      <Testimonials />
-      <Project />
-      <Footer />
-      {/* <Counter /> */}
-      {/* <Login />
-      <Signup /> */}
 
+      <Routting />
     </div>
   );
 }
